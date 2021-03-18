@@ -24,9 +24,9 @@ const handleLogin = () => {
 const LogInPage = (props) => {
   return (
     <div className="login">
-      <h1 className="main-heading"> Tempoture </h1>
+      <h1 className="main-heading"> tempoture </h1>
       <Button variant="info" type="submit" onClick={handleLogin}>
-        Login to spotify {process.env.SPOTIFY_CLIENT_ID}
+        Login with spotify {process.env.SPOTIFY_CLIENT_ID}
       </Button>
     </div>
   );
