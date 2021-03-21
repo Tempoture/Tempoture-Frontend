@@ -163,7 +163,32 @@ span {
     margin-left: 52rem;
   }
 
-
+/*/////////////////////////////////////////////////////////////////////////////////////*/
+  /*Info Page*/
+  .infoTitle{
+    font-size: 5rem;
+    margin-left: 35rem;
+  }
+  .infoSubtitle{
+    font-size: 3rem;
+    margin-left: 40rem;
+    margin-top: 2rem;
+  }
+  .infoContent{
+    font-size: 2rem;
+    margin-left: 25rem;  
+    margin-right: 27rem;  
+  }
+  .infoImg{
+    font-size: 4rem;
+    margin-left: 43rem; 
+    margin-top: 2rem;
+  }
+  .infoFooter{
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    margin-left: 38rem;
+  }
 
 
 

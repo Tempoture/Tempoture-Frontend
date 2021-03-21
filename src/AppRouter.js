@@ -7,6 +7,7 @@ import SettingsPage from './components/Pages/SettingsPage';
 import PlaylistsPage from './components/Pages/PlaylistsPage';
 import StatisticsPage from './components/Pages/StatisticsPage';
 import ArtistsPage from './components/Pages/ArtistsPage';
+import InfoPage from './components/Pages/InfoPage';
 
 class AppRouter extends React.Component {
   render() {
@@ -17,6 +18,7 @@ class AppRouter extends React.Component {
             <Route path="/" component={LogInPage} exact={true} />
             <Route path="/redirect" component={RedirectPage} />
             <Route path="/about" component={AboutUsPage} />
+            <Route path="/info" component={InfoPage} />
             <Route path="/settings" component={SettingsPage} />
             <Route path="/playlists" component={PlaylistsPage} />
             <Route path="/statistics" component={StatisticsPage} />
