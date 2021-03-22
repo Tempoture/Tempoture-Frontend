@@ -13,7 +13,7 @@ class AppRouter extends React.Component {
   render() {
     return (
       <BrowserRouter>
-        <div className="main">
+        <div className="content">
           <Switch>
             <Route path="/" component={LogInPage} exact={true} />
             <Route path="/redirect" component={RedirectPage} />

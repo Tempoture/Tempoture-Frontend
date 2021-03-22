@@ -7,7 +7,7 @@ const AboutUsPage = () => {
     return (
         <div>
            <Navbar />
-            <h1 className="title">Tempoture</h1>
+            <h1 className="banner">Tempoture</h1>
             <h1 className = "subtitle">About Us</h1>
                 <p className="content">じゃがいは数少ないじゃじゃがいもとじゃじゃがいもとしては数少ないじゃじゃがいもじゃがいもとしては数少ないじゃがいものひとつです</p>
             <h1 className="subtitle"> Thank you</h1>
