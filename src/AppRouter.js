@@ -8,6 +8,9 @@ import PlaylistsPage from './components/Pages/PlaylistsPage';
 import StatisticsPage from './components/Pages/StatisticsPage';
 import ArtistsPage from './components/Pages/ArtistsPage';
 import InfoPage from './components/Pages/InfoPage';
+//import { ROUTES } from './components/Routes/routes';
+import PrivateRoute from './components/Routes/PrivateRoute';
+import PublicRoute from './components/Routes/PublicRoute';
 
 class AppRouter extends React.Component {
   render() {
@@ -15,14 +18,14 @@ class AppRouter extends React.Component {
       <BrowserRouter>
         <div className="content">
           <Switch>
-            <Route path="/" component={LogInPage} exact={true} />
-            <Route path="/redirect" component={RedirectPage} />
-            <Route path="/about" component={AboutUsPage} />
-            <Route path="/info" component={InfoPage} />
-            <Route path="/settings" component={SettingsPage} />
-            <Route path="/playlists" component={PlaylistsPage} />
-            <Route path="/statistics" component={StatisticsPage} />
-            <Route path="/artists" component={ArtistsPage} />
+            <PublicRoute component={LogInPage} path={'/'} exact />
+            <PublicRoute component={RedirectPage} path={'/redirect'} exact />
+            <PublicRoute component={InfoPage}  path="/info" exact />
+            <PrivateRoute component={AboutUsPage} path={'/about'} exact />
+            <PrivateRoute component={SettingsPage} path={'/settings'} exact />
+            <PrivateRoute component={PlaylistsPage} path={'/playlists'} exact />
+            <PrivateRoute component={StatisticsPage} path={'/statistics'} exact />
+            <PrivateRoute component={ArtistsPage} path={'/artists'} exact />
           </Switch>
         </div>
       </BrowserRouter>

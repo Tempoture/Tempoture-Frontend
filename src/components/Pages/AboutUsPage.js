@@ -16,7 +16,7 @@ const AboutUsPage = () => {
             <p className="content">じゃがいもは、日数少ないじゃじゃがいもとしては数少ないじゃじゃがいもとしては数少ないじゃじゃがいもじゃがいもとしては数少ないじゃがいものひとつです</p>
            <h1 className = "img">
                <IoIcons.IoLogoGithub/>
-               <img src={image} width="80px" />
+               <img src={image} width="80px" /> 
            </h1>
            <h1 className="footer">An RCOS Project :)</h1>
 

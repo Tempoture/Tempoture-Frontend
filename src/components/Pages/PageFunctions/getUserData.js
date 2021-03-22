@@ -1,5 +1,14 @@
 export const getCodeFromUrl = () => {
   return window.location.search.substring(1).split("code=")[1];
+  /*return window.location.hash
+    .substring(1)
+    .split("&")
+    .reduce((initial, item) => {
+      let parts = item.split("=");
+      initial[parts[0]] = decodeURIComponent(parts[1]);
+      return initial;
+    }, {});*/
+
 };
 
 export const getAddress = async (latitude,longitude) => {

@@ -3,7 +3,9 @@ import Navbar from "../Navbar/Navbar";
 import {getAddress,getCodeFromUrl,getSpotToken} from "./PageFunctions/getUserData"
 import {update_location} from "./PageFunctions/UserRestricted"
 import {url} from "./../../index"
+import { Route, Redirect, RouteProps } from 'react-router-dom';
 require('dotenv').config()
+
 
 async function sendData( authKey, lat, long, refresh_token, last_refreshed,zipcode,country){
     var formData = new FormData();
@@ -44,6 +46,7 @@ async function sendData( authKey, lat, long, refresh_token, last_refreshed,zipco
 }
 
 const RedirectPage =  () => {
+
    const [token, setToken] = useState();
     useEffect(() => {
       async function asyncEffect() {
@@ -115,8 +118,14 @@ const RedirectPage =  () => {
       }
       asyncEffect();
     }, []);
-  /* change this to a ternerary to see if they have a token*/  
- return <div><Navbar /><h1 className="main-heading"> Redirect Page </h1> {token}</div>;
+
+    if(!window.location.href.includes("code")){
+      return <Redirect to={'/'} />
+    }else if (localStorage.getItem('access_token') !== null && localStorage.getItem('access_token') !== 'undefined') {
+      return <Redirect to={'/playlists'} />;
+    } 
+
+    return <div></div>
 };
 
 export default RedirectPage;

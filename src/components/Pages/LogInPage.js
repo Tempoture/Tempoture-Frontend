@@ -15,6 +15,8 @@ const scopes = [
 ];
 
 const handleLogin = () => { 
+    localStorage.setItem('isAuthenticated', true);
+
   window.location = `${process.env.REACT_APP_AUTHORIZE_URL}?client_id=${
     process.env.REACT_APP_CLIENT_ID }&redirect_uri=${
       process.env.REACT_APP_REDIRECT_URL}&scope=${
@@ -22,6 +24,8 @@ const handleLogin = () => {
 };
 
 const LogInPage = (props) => {
+  localStorage.setItem('isAuthenticated', false);
+
   return (
     <div className="login">
       <h1 className="main-heading"> Tempoture </h1>
