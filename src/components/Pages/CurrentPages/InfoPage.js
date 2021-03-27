@@ -1,6 +1,6 @@
 import React from 'react';
 import * as IoIcons from 'react-icons/io';
-import image from '../Navbar/Tempoture Logo.jpg'
+import image from '../../Navbar/Tempoture Logo.jpg'
 
 const InfoPage = () => {
     return (

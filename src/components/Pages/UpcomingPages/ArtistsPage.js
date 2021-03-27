@@ -1,7 +1,7 @@
 import { getByPlaceholderText } from '@testing-library/react';
 import React from 'react';
-import Navbar from "../Navbar/Navbar";
-import Genre from './PageFunctions/genre';
+import Navbar from "../../Navbar/Navbar";
+import Genre from './../PageFunctions/genre';
 
 
 const ArtistsPage  = () => {

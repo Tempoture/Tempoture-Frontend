@@ -1,8 +1,8 @@
 import React, { useEffect,useState } from "react";
-import Navbar from "../Navbar/Navbar";
-import {getAddress,getCodeFromUrl,getSpotToken} from "./PageFunctions/getUserData"
-import {update_location} from "./PageFunctions/UserRestricted"
-import {url} from "./../../index"
+import Navbar from "../../Navbar/Navbar";
+import {getAddress,getCodeFromUrl,getSpotToken} from "./../PageFunctions/getUserData"
+import {update_location} from "./../PageFunctions/UserRestricted"
+import {url} from "./../../../index"
 import { Route, Redirect, RouteProps } from 'react-router-dom';
 require('dotenv').config()
 

@@ -1,7 +1,7 @@
 import React from 'react';
-import Navbar from "../Navbar/Navbar";
+import Navbar from "../../Navbar/Navbar";
 import * as IoIcons from 'react-icons/io';
-import image from '../Navbar/Tempoture Logo.jpg'
+import image from '../../Navbar/Tempoture Logo.jpg'
 
 const AboutUsPage = () => {
     return (

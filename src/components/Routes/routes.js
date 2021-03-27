@@ -1,11 +1,10 @@
-/*enum ROUTES {
-    LOGIN = '/',
-    DASHBOARD = '/dashboard',
-    REDIRECT = '/redirect',
-    ABOUT_US = '/about',
-    SETTINGS = '/settings',
-    PLAYLISTS = '/playlists',
-    STATISTICS = 'statistics',
-    ARTISTS = 'artists',
-
-}*/
+const LOGIN = '/';
+const INFO = '/info';
+const LEARN_MORE = '/LearnMore';
+const DASHBOARD = '/dashboard';
+const REDIRECT = '/redirect';
+const ABOUT_US = '/about';
+const SETTINGS = '/settings';
+const PLAYLISTS = '/playlists';
+const STATISTICS = 'statistics';
+const ARTISTS = 'artists';

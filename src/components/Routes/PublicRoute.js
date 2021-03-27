@@ -10,9 +10,8 @@ function PublicRoute(props: PublicRouteProps & RouteProps): React.ReactElement {
     const { component: Component, restricted = false, ...rest } = props;
 
     const render = props => {
-        if ( !( localStorage.getItem('access_token') === null || 
-                localStorage.getItem('access_token') === 'undefined') && restricted ) {
-            return <Redirect to={'/playlists'} />;
+        if ( restricted ) {
+            return <Redirect to={'/'} />;
         }
 
         return <Component {...props} />;
