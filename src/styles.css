@@ -23,20 +23,20 @@ to percentage values and use REM everywhere else.
     font-weight: 600;
     font-size: 2rem;
     line-height: 1.2;
-/*margin top and bottom to change these?*/
   }
 
   /*banner: controls the header (appears at the very top) of the page.*/
   .banner{
     font-size: 8rem;
     font-weight: 700;
-    line-height: 100px;
+    line-height: 8rem;
     margin-top: 2rem;
+    margin-top: 0rem;
   }
 
   /*Larger than normal text but smaller than the banner/title*/
   .subtitle{
-    line-height: 0px;
+    line-height: 0rem;
     font-size: 6rem;
     font-weight: 600;
   }
@@ -169,13 +169,10 @@ span {
 
   /*/////////////////////////////////////////////////////////////////////////////////////*/
   /*AboutUs Page*/
-
   .img{
     font-size: 4rem;
     margin-left: 57rem; 
     margin-top: 2rem;
   }
 
-/*/////////////////////////////////////////////////////////////////////////////////////*/
-  /*Info Page*/
 
