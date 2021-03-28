@@ -1,4 +1,4 @@
-/*This effects the the size in every class of the website. Initialize
+  /*This effects the the size in every class of the website. Initialize
 to percentage values and use REM everywhere else.
 */
 :root {
@@ -15,7 +15,8 @@ to percentage values and use REM everywhere else.
 
   /*body: controls only the center area, which includes mostly text*/
   body {
-    background: #f3f4f6;
+    padding-left: var(--pad);
+    background: url(pattern.png);
     font-family: 'Montserrat', -apple-system, system-ui, BlinkMacSystemFont,
       'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
     letter-spacing: 1px;
@@ -23,20 +24,20 @@ to percentage values and use REM everywhere else.
     font-weight: 600;
     font-size: 2rem;
     line-height: 1.2;
+/*margin top and bottom to change these?*/
   }
 
   /*banner: controls the header (appears at the very top) of the page.*/
   .banner{
     font-size: 8rem;
     font-weight: 700;
-    line-height: 8rem;
+    line-height: 100px;
     margin-top: 2rem;
-    margin-top: 0rem;
   }
 
   /*Larger than normal text but smaller than the banner/title*/
   .subtitle{
-    line-height: 0rem;
+    line-height: 0px;
     font-size: 6rem;
     font-weight: 600;
   }
@@ -55,19 +56,103 @@ to percentage values and use REM everywhere else.
     margin-bottom: 0rem;
   }
 
-  .btn {
-    letter-spacing: 1px;
-  }
+  /*LoginPage*/
   
   .login {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding-top: 20px;
+  }
+
+  .container {
+      border-radius: 25px;
+      background: #2f2f2f;
+      display: flex;
+      flex-direction: column;
+      background-position:center;
+      width:420px;
+      height:635px;
+      justify-content: center;
+      align-items: center;
+      font-family: JasmineUPC;
+      font-size: 4rem;
+      padding-top: 20px;
+  }
+
+  .RCOS {
+    color: white;
+    font-weight: bold;
+    font-size: 2.3rem;
+  }
+
+  .Test {
+    color: #e63f3f;
+    font-weight: bold;
+    font-size: 2.3rem;
+  }
+
+  .Spotify {
+    color: Black;
+    font-family: JasmineUPC;
+    padding-top: 10px;
+    font-weight: bolder;
+  }
+
+  .Version {
+    padding-top: 70px;
+    color: white;
+    font-weight: bold;
+    font-size: 2.3rem;
+    padding-bottom: 30px;
+  }
+
+  .What {
+    padding-top: 45px;
+    color: white;
+    font-size: 2.3rem;
+    font-weight: bold;
+  }
+
+  .Agree {
+    padding-top: 15px;
+    color: white;
+    font-size: .75rem;
+    text-align: center;
+    padding-left: 25px;
+    padding-right: 25px;
+    font-family: JasmineUPC;
+    padding-bottom: 5px;
+    font-size: 1.2rem;
+  }
+  
+  .btn {
+    background: #79a3f8;
+    letter-spacing: 1px;
+    width: 420px;
+    height: 60px;
+    border: none;
+    border-bottom-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+    font-weight: bold;
   }
   
   .login .btn {
-    font-size: 1.2rem;
+    font-size: 2.3rem;
+    font-family: JasmineUPC;
+    color: white;
+  }
+
+  .Checkbox {
+    font-size: 2rem;
+    padding-bottom: 10px;
+    color: white;
+  }
+
+  .main {
+    width: 90%;
+    margin: 2rem auto;
   }
 
   .main-heading {
@@ -169,10 +254,13 @@ span {
 
   /*/////////////////////////////////////////////////////////////////////////////////////*/
   /*AboutUs Page*/
+
   .img{
     font-size: 4rem;
     margin-left: 57rem; 
     margin-top: 2rem;
   }
 
+/*/////////////////////////////////////////////////////////////////////////////////////*/
+  /*Info Page*/
 
