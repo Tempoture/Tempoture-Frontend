@@ -32,7 +32,8 @@ to percentage values and use REM everywhere else.
     font-size: 8rem;
     font-weight: 700;
     line-height: 100px;
-    margin-top: 2rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
   }
 
   /*Larger than normal text but smaller than the banner/title*/
@@ -40,6 +41,7 @@ to percentage values and use REM everywhere else.
     line-height: 0px;
     font-size: 6rem;
     font-weight: 600;
+    margin-bottom: 1rem;
   }
   
 /*An rcos project- text on the bottom*/
@@ -51,10 +53,30 @@ to percentage values and use REM everywhere else.
 
   /*the icons at the bottom of the info page*/
   .infoImg{
-    font-size: 6rem;
-    padding: 0rem;
-    margin-bottom: 0rem;
+    background: #2f2f2f;
+    display: flex;
+    width:100rem;
+    justify-content: center;
+    align-items: center;
+    font-family: JasmineUPC;
   }
+
+  /*Testing blackbox container but with scaling*/
+  .newcontainer {
+    border-radius: 25px;
+    background: #2f2f2f;
+    display: flex;
+    flex-direction: column;
+    background-position:center;
+    width:100rem;
+    height:93rem;
+    justify-content: center;
+    align-items: center;
+    font-family: JasmineUPC;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+
+}
 
   /*LoginPage*/
   
