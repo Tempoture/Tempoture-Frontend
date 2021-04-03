@@ -18,12 +18,16 @@ const scopes = [
 ];
 
 const handleLogin = () => { 
-    localStorage.setItem('isAuthenticated', true);
+  localStorage.setItem('isAuthenticated', true);
 
-  window.location = `${process.env.REACT_APP_AUTHORIZE_URL}?client_id=${
-    process.env.REACT_APP_CLIENT_ID }&redirect_uri=${
-      process.env.REACT_APP_REDIRECT_URL}&scope=${
-        scopes.join("%20")}&response_type=code&show_dialog=true`;
+  if(document.getElementById("check").checked == true){
+    window.location = `${process.env.REACT_APP_AUTHORIZE_URL}?client_id=${
+      process.env.REACT_APP_CLIENT_ID }&redirect_uri=${
+        process.env.REACT_APP_REDIRECT_URL}&scope=${
+          scopes.join("%20")}&response_type=code&show_dialog=true`;
+  } else {
+    alert("Cannot login until User Agreement is accepted");
+  }
 };
 
 const LogInPage = (props) => {
@@ -47,14 +51,14 @@ const LogInPage = (props) => {
             What is Tempoture?
         </a>
         <div className = "Agree">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+          By checking the user agreement below I hereby expressively consent for this app to be able to use website tracking in regard to location data and to communicate with my Spotify account's currently playing data, recently played data, playback state data and playlist data for the next 30 days.
         </div>
         <div className="Checkbox">
-          <input type="checkbox" className="Check"/>
+          <input type="checkbox" className="Check" id="check" />
           <label className="Label"> Accept User Agreement</label>
         </div>
         <Button variant="info" type="submit" onClick={handleLogin}>
-          Login to spotify {process.env.SPOTIFY_CLIENT_ID}
+          Login to Spotify {process.env.SPOTIFY_CLIENT_ID}
         </Button>
       </div>
       <div className = "Spotify">

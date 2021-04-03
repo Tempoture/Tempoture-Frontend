@@ -2,6 +2,7 @@ import React from 'react';
 import image from '../../Navbar/Tempoture Logo.jpg'
 import gitLogo from '../Images/GithubDesktopLogo.png'
 import RcosR from '../Images/RCOSlogo.png'
+
 const InfoPage = () => {
     return (
         <content>

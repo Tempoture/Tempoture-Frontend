@@ -118,7 +118,7 @@ const RedirectPage =  () => {
       }
       asyncEffect();
     }, []);
-
+  
     if(!window.location.href.includes("code")){
       return <Redirect to={'/'} />
     }else if (localStorage.getItem('access_token') !== null && localStorage.getItem('access_token') !== 'undefined') {

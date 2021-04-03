@@ -32,6 +32,7 @@ class AppRouter extends React.Component {
             
             {/*                        Upcomming Pages                            */}
             <PublicRoute component={RedirectPage} path={'/redirect'} exact />
+            
             <PrivateRoute component={AboutUsPage} path={'/about'} exact />
             <PrivateRoute component={SettingsPage} path={'/settings'} exact />
             <PrivateRoute component={PlaylistsPage} path={'/playlists'} exact />
