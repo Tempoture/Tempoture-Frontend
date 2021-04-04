@@ -46,9 +46,9 @@ to percentage values and use REM everywhere else.
   
 /*An rcos project- text on the bottom*/
   .footer{
-    line-height: 0px;
     font-size: 3rem;
-    margin-top: 2rem;
+    margin-top: 64px;
+    margin-bottom: 0px;
   }
 
   /*the icons at the bottom of the info page*/
@@ -59,6 +59,17 @@ to percentage values and use REM everywhere else.
     justify-content: center;
     align-items: center;
     font-family: JasmineUPC;
+  }
+
+  .infoBody{
+      padding-top: 15px;
+      color: white;
+      text-align: center;
+      padding-left: 40px;
+      padding-right: 40px;
+      font-family: JasmineUPC;
+      padding-bottom: 5px;
+      font-size: 2rem;
   }
 
   /*Testing blackbox container but with scaling*/
