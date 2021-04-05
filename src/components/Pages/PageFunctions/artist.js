@@ -1,6 +1,5 @@
 import React from 'react'
 import image from './Tempoture Logo.jpg' 
-import artistlist from '../pages.css'
 
 const Artist = ({img, name}) => {
 

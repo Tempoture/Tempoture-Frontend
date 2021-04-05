@@ -27,6 +27,12 @@ export const SidebarData = [
     cName: 'nav-text'
   },
   {
+    title: 'Info',
+    path: '/info',
+    icon: <IoIcons.IoMdInformationCircleOutline />,
+    cName: 'nav-text'
+  },
+  {
     title: 'Settings',
     path: '/settings',
     icon: <IoIcons.IoMdSettings />,
