@@ -12,10 +12,8 @@ async function sendData( authKey, lat, long, refresh_token, last_refreshed,zipco
     formData.append('last_refresh',last_refreshed);
     formData.append('zipcode',zipcode);
     formData.append('country',country);
-    formData.append('latitude',lat);
-    formData.append('longitude', long);
     var name = "";
-    if(localStorage.getItem('display_name') === null)
+    if(localStorage.getItem('display_name') === null || localStorage.getItem('user_id') === null)
     {
       try {
         let response = await fetch('https://api.spotify.com/v1/me', { 
@@ -24,13 +22,16 @@ async function sendData( authKey, lat, long, refresh_token, last_refreshed,zipco
         });
         let data = await response.json();
         localStorage.setItem('display_name',data.display_name);
+        localStorage.setItem('user_id',data.id)
       }
       catch(error) {
         console.log("Couldn't retreive display name from acess_token. ERROR: " + error);
       }
     }
     name = localStorage.getItem('display_name');
+    var id =  localStorage.getItem('user_id')
     formData.append('display_name',name);
+    formData.append('user_id',id)
     let response = await fetch(url + 'store_user', { 
       method: 'POST',
       body: formData
@@ -39,7 +40,7 @@ async function sendData( authKey, lat, long, refresh_token, last_refreshed,zipco
     console.log(data);
     if(data.message === "User already inserted")
     {
-      update_location(name,lat,long,zipcode,country);
+      update_location(id,zipcode,country);
     }
 }
 
@@ -93,7 +94,7 @@ const RedirectPage =  () => {
                   }
                   else
                   {
-                    sendData( _token,position.coords.latitude,position.coords.longitude,refresh_token,last_refreshed,'ZipCode N/A', 'N/A');
+                    sendData( _token,position.coords.latitude,position.coords.longitude,refresh_token,last_refreshed,'ZipCode N/A', 'US');
                     console.log("Couldn't retreive Adress from given lat long cooordinates. Check if you have the REACT_APP_GOOGLE_MAP_KEY Key");
                   } 
                 })

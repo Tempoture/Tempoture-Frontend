@@ -1,10 +1,8 @@
 import {url} from "./../../../index"
 
-export const update_location = async (name,lat,long,zipcode,country) => {
+export const update_location = async (user_id,zipcode,country) => {
     var updateFormData = new FormData();
-    updateFormData.append('display_name',name);
-    updateFormData.append('latitude',lat);
-    updateFormData.append('longitude',long);
+    updateFormData.append('user_id',user_id);
     updateFormData.append('zipcode',zipcode);
     updateFormData.append('country',country);
     let updateResp =  await fetch(url + 'update_location', {

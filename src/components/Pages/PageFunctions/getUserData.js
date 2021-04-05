@@ -8,6 +8,7 @@ export const getAddress = async (latitude,longitude) => {
         let c_response =  await fetch('https://maps.googleapis.com/maps/api/geocode/json?latlng=' + latitude + ',' + longitude + '&key=' + process.env.REACT_APP_GOOGLE_MAP_KEY + '&location_type=APPROXIMATE&result_type=country')
         let rJson = await response.json();
         let cJson = await c_response.json();
+        console.log("Latitude: " + latitude + "\nLongitude: " + longitude + "\nResults:" + JSON.stringify(cJson.results) + "\nRjson:" + JSON.stringify(rJson))
         return [cJson.results[0].address_components[0].short_name,rJson.results[0].address_components[0].long_name];
     }
     catch(error){
