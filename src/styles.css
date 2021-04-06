@@ -4,19 +4,21 @@ to percentage values and use REM everywhere else.
 :root {
   --pad: 0px;
   font-size: 62.5%;
-}*   
+}*   /* Sidebar scaling variable is --pad , used in navbar,js */
 
   /*content: controls everything: the left navbar, the banner, the body, the footer*/
-  .content {
+  .content_info {
     text-align: center;
-    max-width: 1000px;
-    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 
   /*body: controls only the center area, which includes mostly text*/
   body {
     padding-left: var(--pad);
-    background: url(pattern.png);
+    background: lightgray;
     font-family: 'Montserrat', -apple-system, system-ui, BlinkMacSystemFont,
       'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
     letter-spacing: 1px;
@@ -92,11 +94,13 @@ to percentage values and use REM everywhere else.
   /*LoginPage*/
   
   .login {
+    background: url(pattern.png);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     padding-top: 20px;
+    position: relative;
   }
 
   .container {
@@ -111,7 +115,7 @@ to percentage values and use REM everywhere else.
       align-items: center;
       font-family: JasmineUPC;
       font-size: 4rem;
-      padding-top: 20px;
+      padding-top: 55px;
   }
 
   .RCOS {

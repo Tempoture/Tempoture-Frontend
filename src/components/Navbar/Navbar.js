@@ -11,12 +11,15 @@ function Navbar() {
 
   const showSidebar = () => setSidebar(!sidebar);
 
-
+  //Sidebar scaling code****************************
   if (sidebar) {
+    //If the side bar is active, pad the left (250px because sidebar is 250px)
     document.documentElement.style.setProperty('--pad','250px');
   } else {
+    //If sidebar is not active, closed, do not padd the left side
     document.documentElement.style.setProperty('--pad','0px');
   }
+  //************************************************
 
   return (
     <>

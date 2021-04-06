@@ -7,7 +7,7 @@ import TempText from '../CurrentPages/Tempoture-Text.png'
 const InfoPage = () => {
     return (
         <content>
-            <div class = "content">
+            <div class = "content_info">
                 <div class = "newcontainer">
                     <p className="banner">
                     <img src={TempText} 
