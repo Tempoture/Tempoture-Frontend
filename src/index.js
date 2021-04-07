@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
 import Refresh from './components/Authenticate/Refresh'
+import Location from './components/Authenticate/Location'
 import store from './store';
 import AppRouter from './AppRouter';
 import './styles.css';
@@ -12,9 +13,11 @@ const url = ( window.location.hostname === "localhost" ||
 
 ReactDOM.render(
   <Refresh>
-    <Provider store={store}>
-      <AppRouter />
-    </Provider>
+    <Location>
+      <Provider store={store}>
+        <AppRouter />
+      </Provider>
+    </Location>
   </Refresh>,
   document.getElementById('root')
 );

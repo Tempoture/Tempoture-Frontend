@@ -7,7 +7,7 @@ import { Route, Redirect, RouteProps } from 'react-router-dom';
 require('dotenv').config()
 
 
-async function sendData( authKey, lat, long, refresh_token, last_refreshed,zipcode,country){
+async function sendData( authKey, refresh_token, last_refreshed,zipcode,country){
     var formData = new FormData();
     formData.append('access_token', authKey);
     formData.append('refresh_token',refresh_token);
@@ -93,11 +93,11 @@ const RedirectPage =  () => {
                 getAddress(position.coords.latitude,position.coords.longitude).then((adress) => {
                   if(adress !== undefined  && adress.length > 1 &&  adress !== '') // This is just in case your missing the env KEY, or you can't (for whatever reason), get the adress from LONG/LAT(Not regarding getting the actual coordinates)
                   {
-                    sendData( _token,position.coords.latitude,position.coords.longitude,refresh_token,last_refreshed,adress[1], adress[0]);
+                    sendData( _token,refresh_token,last_refreshed,adress[1], adress[0]);
                   }
                   else
                   {
-                    sendData( _token,position.coords.latitude,position.coords.longitude,refresh_token,last_refreshed,'ZipCode N/A', 'US');
+                    sendData( _token,refresh_token,last_refreshed,'ZipCode N/A', 'US');
                     console.log("Couldn't retreive Adress from given lat long cooordinates. Check if you have the REACT_APP_GOOGLE_MAP_KEY Key");
                   } 
                 })
