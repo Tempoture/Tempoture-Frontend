@@ -3,6 +3,12 @@ import TempLogo from '../CurrentPages/Tempo-Logo-Grey.png'
 import gitLogo from '../Images/GithubDesktopLogo.png'
 import RcosR from '../Images/RCOSlogo.png'
 import TempText from '../CurrentPages/Tempoture-Text.png'
+import { Button } from 'react-bootstrap';
+
+const handleLogOut = () => { 
+    localStorage.clear();
+    window.location = '/';
+};
 
 const InfoPage = () => {
     return (
@@ -28,11 +34,13 @@ const InfoPage = () => {
                             <a href="https://rcos.io/">
                                 <img src={RcosR} 
                                 width="61px" height="61px"/>
-                            </a>
+                            </a>  
                         </div>
                         An RCOS Project :)
                     </p>
-                    
+                    <Button variant="info" type="submit" onClick={handleLogOut}>
+                                Logout {process.env.SPOTIFY_CLIENT_ID}
+                    </Button> 
                 </div>
             </div>
        </content>
