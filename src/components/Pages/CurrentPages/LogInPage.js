@@ -31,11 +31,8 @@ const handleLogin = () => {
 };
 
 
-//background fix
-if (window.location.href=="http://localhost:3000/") {
-  document.documentElement.style.setProperty('--activePage',"url('/static/media/pattern.35d74673.png')");
-  //console.log("WORKS");
-}
+//May be a better way of doing this
+document.documentElement.style.setProperty('--activePage',"url('/static/media/pattern.35d74673.png')");
 
 const LogInPage = (props) => {
   localStorage.setItem('isAuthenticated', false);
