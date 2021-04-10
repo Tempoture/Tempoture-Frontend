@@ -5,7 +5,7 @@ to percentage values and use REM everywhere else.
   --pad: 0px;
   --activePage: grey;
   font-size: 62.5%;
-  background: var(--activePage);
+  background: url(pattern.png) /*var(--activePage);*/
 }*   /* Sidebar scaling variable is --pad , used in navbar,js */
 
   /*content: controls everything:*/
