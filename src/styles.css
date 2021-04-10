@@ -143,22 +143,28 @@ to percentage values and use REM everywhere else.
     padding-bottom: 5px;
     font-size: 1.2rem;
   }
-  
-  .btn {
+
+  .btn{
     background: #79a3f8;
     letter-spacing: 1px;
-    width: 420px;
-    height: 60px;
-    border: none;
     border-bottom-right-radius: 25px;
     border-bottom-left-radius: 25px;
     font-weight: bold;
-  }
-  
-  .login .btn {
     font-size: 2.3rem;
     font-family: JasmineUPC;
     color: white;
+    border: none;
+  }
+  
+  .login .btn {
+    
+    width: 420px;
+    height: 60px;
+  }
+
+  .newcontainer .btn {
+    width: 1000px;
+    height: 900px;
   }
 
   .Checkbox {
