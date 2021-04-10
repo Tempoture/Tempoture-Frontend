@@ -1,32 +1,25 @@
-  /*This effects the the size in every class of the website. Initialize
+/*This effects the the size in every class of the website. Initialize
 to percentage values and use REM everywhere else.
 */
 :root {
   --pad: 0px;
   font-size: 62.5%;
+  background: url(pattern.png);
 }*   /* Sidebar scaling variable is --pad , used in navbar,js */
 
-  /*content: controls everything: the left navbar, the banner, the body, the footer*/
-  .content_info {
+  /*content: controls everything:*/
+  .content {
     text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-  }
-
-  /*body: controls only the center area, which includes mostly text*/
-  body {
-    padding-left: var(--pad);
-    background: lightgray;
-    font-family: 'Montserrat', -apple-system, system-ui, BlinkMacSystemFont,
-      'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-    letter-spacing: 1px;
-    color: #ffffff;
-    font-weight: 600;
+    font-family: JasmineUPC;
     font-size: 2rem;
+    color: white;
+    font-weight: 600;
     line-height: 1.2;
-/*margin top and bottom to change these?*/
+    letter-spacing: 1px;
   }
 
   /*banner: controls the header (appears at the very top) of the page.*/
@@ -79,43 +72,29 @@ to percentage values and use REM everywhere else.
     border-radius: 25px;
     background: #2f2f2f;
     display: flex;
-    flex-direction: column;
     background-position:center;
-    width:100rem;
-    height:93rem;
+    flex-direction: column;
+    width: 1000px;
+    height: 900px;
     justify-content: center;
     align-items: center;
     font-family: JasmineUPC;
     margin-top: 2rem;
     margin-bottom: 2rem;
-
-}
+  }
 
   /*LoginPage*/
-  
   .login {
-    background: url(pattern.png);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     padding-top: 20px;
-    position: relative;
   }
 
   .container {
-      border-radius: 25px;
-      background: #2f2f2f;
-      display: flex;
-      flex-direction: column;
-      background-position:center;
-      width:420px;
-      height:620px;
-      justify-content: center;
-      align-items: center;
-      font-family: JasmineUPC;
-      font-size: 4rem;
-      padding-top: 55px;
+    border-radius: 25px;
+    background: #2f2f2f;
+    background-position:center;
+    width:420px;
+    height:620px;
+    padding-top: 55px;
   }
 
   .RCOS {
