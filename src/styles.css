@@ -91,31 +91,18 @@ to percentage values and use REM everywhere else.
 
 }
 
-  /*LoginPage*/
-  
+/*LoginPage*/
   .login {
-    background: url(pattern.png);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     padding-top: 20px;
-    position: relative;
   }
 
   .container {
-      border-radius: 25px;
-      background: #2f2f2f;
-      display: flex;
-      flex-direction: column;
-      background-position:center;
-      width:420px;
-      height:620px;
-      justify-content: center;
-      align-items: center;
-      font-family: JasmineUPC;
-      font-size: 4rem;
-      padding-top: 55px;
+    border-radius: 25px;
+    background: #2f2f2f;
+    background-position:center;
+    width:420px;
+    height:620px;
+    padding-top: 55px;
   }
 
   .RCOS {
