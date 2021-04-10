@@ -3,8 +3,9 @@ to percentage values and use REM everywhere else.
 */
 :root {
   --pad: 0px;
+  --activePage: grey;
   font-size: 62.5%;
-  background: url(pattern.png);
+  background: var(--activePage);
 }*   /* Sidebar scaling variable is --pad , used in navbar,js */
 
   /*content: controls everything:*/

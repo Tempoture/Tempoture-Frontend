@@ -32,10 +32,10 @@ const handleLogin = () => {
 
 
 //background fix
-//if (window.location.href=="http://localhost:3000/") {
-  //document.documentElement.style.setProperty('--activePage',"url(pattern.png)");
+if (window.location.href=="http://localhost:3000/") {
+  document.documentElement.style.setProperty('--activePage',"url('/static/media/pattern.35d74673.png')");
   //console.log("WORKS");
-//}
+}
 
 const LogInPage = (props) => {
   localStorage.setItem('isAuthenticated', false);
