@@ -25,11 +25,10 @@ to percentage values and use REM everywhere else.
 
   /*banner: controls the header (appears at the very top) of the page.*/
   .banner{
-    font-size: 8rem;
-    font-weight: 700;
-    line-height: 100px;
     margin-top: 1rem;
     margin-bottom: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
 
   /*Larger than normal text but smaller than the banner/title*/
@@ -76,13 +75,15 @@ to percentage values and use REM everywhere else.
     background-position:center;
     flex-direction: column;
     width: 1000px;
-    height: 800px;
+    height: 780px;
     justify-content: center;
     align-items: center;
     font-family: JasmineUPC;
     margin-top: 5rem;
     margin-bottom: 2rem;
   }
+
+  
 
 /*LoginPage*/
   .login {
@@ -286,4 +287,47 @@ span {
 
 /*/////////////////////////////////////////////////////////////////////////////////////*/
   /*Info Page*/
+  @media(orientation: portrait){
+    @media (min-width: 421px){
+      .infoContainer{
+        height: 1020px;
+        width: 500px;
+      }
+      .infoImg{
+        width: 200px;
+      }
+      .banner{
+        padding-top: 1rem;
+      }
+      .infoBody{
+        margin-left: 0px;
+        margin-right: 1rem;
+      }
+      .infoContainer .btn{
+        width: 500px
+      }
 
+    }
+    
+    @media (max-width: 420px){
+      .infoContainer{
+        height: 1150px;
+        margin-bottom: 0px;
+      }
+      
+      .banner{
+        padding-top: 1rem;
+      }
+
+      .infoBody{
+        margin-left: 30rem;
+        margin-right: 30rem;
+      }
+    }
+  }
+
+  @media(orientation: landscape){
+    @media (max-width: 420px){
+
+    }   
+  }
