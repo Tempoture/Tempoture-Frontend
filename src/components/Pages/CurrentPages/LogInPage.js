@@ -48,7 +48,7 @@ const LogInPage = (props) => {
             <img src={Text_} width="250px"></img>
         </div>
         <div className = "RCOS">
-          An <a className = "Test" href = "https://rcos.io/">RCOS</a> Project
+          An <a className = "RcosLink" href = "https://rcos.io/">RCOS</a> Project
         </div>
         <div className = "Version">
             Version 1.0 Coming Summer 2021

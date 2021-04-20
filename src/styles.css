@@ -86,10 +86,13 @@ to percentage values and use REM everywhere else.
   
 
 /*LoginPage*/
+
+  /* Keep the login box off the top of the screen*/
   .login {
     padding-top: 20px;
   }
 
+  /*Grey box around login*/
   .container {
     border-radius: 25px;
     background: #2f2f2f;
@@ -99,17 +102,24 @@ to percentage values and use REM everywhere else.
     padding-top: 55px;
   }
 
+  /*The text around RCOS on the page*/
+
   .RCOS {
     color: white;
     font-weight: bold;
     font-size: 2.3rem;
   }
 
-  .Test {
+  /*The red link for RCOS*/
+
+  .RcosLink {
     color: #e63f3f;
     font-weight: bold;
     font-size: 2.3rem;
   }
+
+
+  /*Don't have spotify link*/
 
   .Spotify {
     color: Black;
@@ -117,6 +127,8 @@ to percentage values and use REM everywhere else.
     padding-top: 10px;
     font-weight: bolder;
   }
+
+  /*Version of Tempoture*/
 
   .Version {
     padding-top: 70px;
@@ -126,12 +138,16 @@ to percentage values and use REM everywhere else.
     padding-bottom: 30px;
   }
 
+  /*Link for what is tempoture*/
+
   .What {
     padding-top: 45px;
     color: #79a3f8;
     font-size: 2.3rem;
     font-weight: bold;
   }
+
+  /*Agreement statement (terms/conditions)*/
 
   .Agree {
     padding-top: 15px;
@@ -144,6 +160,8 @@ to percentage values and use REM everywhere else.
     padding-bottom: 5px;
     font-size: 1.2rem;
   }
+
+  /*Generic button - sizing to be reused on later screen*/
 
   .btn{
     background: #79a3f8;
@@ -167,6 +185,8 @@ to percentage values and use REM everywhere else.
     width: 1000px;
     height: 120px;
   }
+
+  /*Accept user agreement*/
 
   .Checkbox {
     font-size: 2rem;
