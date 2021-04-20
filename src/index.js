@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
 import Refresh from './components/Authenticate/Refresh'
 import Location from './components/Authenticate/Location'
-import store from './store';
+import store from './app/store';
 import AppRouter from './AppRouter';
 import './styles.css';
 
