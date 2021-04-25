@@ -14,8 +14,7 @@ const InfoPage = () => {
     return (
         <div class = "infoContainer">
             <p className="banner">
-            <img src={TempText} 
-                    width="400px"/>
+                <img src={TempText}/>
             </p>
             <p className="subtitle"> Thank you</p>
                 <p className="infoBody">Tempoture is an open source application that recommends Spotify music playlists based on weather data in your area. We are an open source development team from the Rensselaer Center for Open Source and we're thankful that you willing to help us train our machine learning model. Our first version of the app will be released in the Summer of 2021 and it will be free to use, so keep an eye out for that! </p>
