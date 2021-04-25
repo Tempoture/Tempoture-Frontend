@@ -104,7 +104,7 @@ to percentage values and use REM everywhere else.
     background-position:center;
     width:420px;
     height:620px;
-    padding-top: 55px;
+    padding-top: 20px;
   }
 
   /*The text around RCOS on the page*/
@@ -140,7 +140,7 @@ to percentage values and use REM everywhere else.
     color: white;
     font-weight: bold;
     font-size: 2.3rem;
-    padding-bottom: 30px;
+    padding-bottom: 70px;
   }
 
   /*Link for what is tempoture*/
@@ -195,7 +195,7 @@ to percentage values and use REM everywhere else.
 
   .Checkbox {
     font-size: 2rem;
-    padding-bottom: 10px;
+    padding-bottom: 20px;
     color: white;
   }
 
