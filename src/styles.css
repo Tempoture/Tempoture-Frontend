@@ -25,6 +25,7 @@ to percentage values and use REM everywhere else.
     letter-spacing: 1px;
   }
 
+
   /*banner: controls the header (appears at the very top) of the page.*/
   .banner{
     margin-top: 1rem;
@@ -314,7 +315,8 @@ span {
     @media (min-width: 421px){
       /**************LOGIN****************/
       .content{
-        position: absolute;
+        height: 100%;
+        width: 100%;
       }
       .login {
         padding-top: 0px;
