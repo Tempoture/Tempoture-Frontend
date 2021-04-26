@@ -88,84 +88,6 @@ to percentage values and use REM everywhere else.
     margin-bottom: 2rem;
   }
 
-  
-
-/*LoginPage*/
-
-  /* Keep the login box off the top of the screen*/
-  .login {
-    padding-top: 20px;
-  }
-
-  /*Grey box around login*/
-  .container {
-    border-radius: 25px;
-    background: #2f2f2f;
-    background-position:center;
-    width:420px;
-    height:620px;
-    padding-top: 20px;
-  }
-
-  /*The text around RCOS on the page*/
-
-  .RCOS {
-    color: white;
-    font-weight: bold;
-    font-size: 2.3rem;
-  }
-
-  /*The red link for RCOS*/
-
-  .RcosLink {
-    color: #e63f3f;
-    font-weight: bold;
-    font-size: 2.3rem;
-  }
-
-
-  /*Don't have spotify link*/
-
-  .Spotify {
-    color: Black;
-    font-family: JasmineUPC;
-    padding-top: 10px;
-    font-weight: bolder;
-  }
-
-  /*Version of Tempoture*/
-
-  .Version {
-    padding-top: 70px;
-    color: white;
-    font-weight: bold;
-    font-size: 2.3rem;
-    padding-bottom: 70px;
-  }
-
-  /*Link for what is tempoture*/
-
-  .What {
-    padding-top: 45px;
-    color: #79a3f8;
-    font-size: 2.3rem;
-    font-weight: bold;
-  }
-
-  /*Agreement statement (terms/conditions)*/
-
-  .Agree {
-    padding-top: 15px;
-    color: white;
-    font-size: .75rem;
-    text-align: center;
-    padding-left: 25px;
-    padding-right: 25px;
-    font-family: JasmineUPC;
-    padding-bottom: 5px;
-    font-size: 1.2rem;
-  }
-
   /*Generic button - sizing to be reused on later screen*/
 
   .btn{
@@ -179,24 +101,10 @@ to percentage values and use REM everywhere else.
     color: white;
     border: none;
   }
-  
-  .login .btn {
-    
-    width: 420px;
-    height: 60px;
-  }
 
   .infoContainer .btn {
     width: 1000px;
     height: 120px;
-  }
-
-  /*Accept user agreement*/
-
-  .Checkbox {
-    font-size: 2rem;
-    padding-bottom: 20px;
-    color: white;
   }
 
   .main {
@@ -310,11 +218,160 @@ span {
     margin-top: 2rem;
   }
 
+
+  /*LoginPage*/
+
+  /* Keep the login box off the top of the screen*/
+  .login {
+    padding-top: 20px;
+    height: 100%;
+  }
+
+  /*Grey box around login*/
+  .container {
+    border-top-right-radius: 25px;
+    border-top-left-radius: 25px;
+    background: #2f2f2f;
+    background-position:center;
+    width:420px;
+    height:560px;
+    padding-top: 7%;
+  }
+
+  /*The text around RCOS on the page*/
+
+  .RCOS {
+    color: white;
+    font-weight: bold;
+    font-size: 2.3rem;
+  }
+
+  /*The red link for RCOS*/
+
+  .RcosLink {
+    color: #e63f3f;
+    font-weight: bold;
+    font-size: 2.3rem;
+  }
+
+
+  /*Don't have spotify link*/
+
+  .Spotify {
+    color: Black;
+    font-family: JasmineUPC;
+    padding-top: 2%;
+    font-weight: bolder;
+  }
+
+  /*Version of Tempoture*/
+
+  .Version {
+    padding-top: 20%;
+    color: white;
+    font-weight: bold;
+    font-size: 2.3rem;
+    padding-bottom: 17%;
+  }
+
+  /*Link for what is tempoture*/
+
+  .What {
+    padding-top: 20%;
+    color: #79a3f8;
+    font-size: 2.3rem;
+    font-weight: bold;
+  }
+
+  /*Agreement statement (terms/conditions)*/
+
+  .Agree {
+    padding-top: 2%;
+    color: white;
+    text-align: center;
+    padding-left: 25px;
+    padding-right: 25px;
+    font-family: JasmineUPC;
+    padding-bottom: 5px;
+    font-size: 1.2rem;
+  }
+
+  .login .btn {
+    width: 420px;
+    height: 60px;
+  }
+  /*Accept user agreement*/
+
+  .Checkbox {
+    font-size: 2rem;
+    color: white;
+  }
+
 /*/////////////////////////////////////////////////////////////////////////////////////*/
   /*Info Page*/
   @media(orientation: portrait){
     /*IPAD portrait*/
     @media (min-width: 421px){
+      /**************LOGIN****************/
+      .content{
+        position: absolute;
+      }
+      .login {
+        padding-top: 0px;
+      }
+      .logo img{
+        width: 300px;
+      }
+      .text img{
+        width: 450px;
+      }
+      /*Grey box around login*/
+      .container {
+        /*vertical-align: center;*/
+        height: 100%;
+        width: 100%;
+        padding-top: 20px;
+        margin-top: 0rem;
+        margin-bottom: 0rem;
+        overflow: hidden;
+        border-radius: 0px;
+      }
+
+      /*The text around RCOS on the page*/
+      .RCOS {
+        font-size: 4rem;
+      }
+      /*The red link for RCOS*/
+      .RcosLink {
+        font-size: 4rem;
+      }
+      /*Don't have spotify link*/
+      .Spotify {
+        font-size: 3rem;
+      }
+      /*Version of Tempoture*/
+      .Version {
+        font-size: 4rem;
+      }
+      /*Link for what is tempoture*/
+      .What {
+        font-size: 4rem;
+      }
+      /*Agreement statement (terms/conditions)*/
+      .Agree {
+        font-size: 2.3rem;
+      }
+      .Checkbox {
+        font-size: 3rem;
+      }
+      .login .btn {
+    
+        width: 100%;
+        border-radius: 0px;
+        font-size: 4rem;
+        height: 100px;
+      }
+      /**********************************/
       .infoContainer{
         height: 100%;
         width: 100%;
@@ -358,6 +415,28 @@ span {
 
     /*Phone portrait*/
     @media (max-width: 420px){
+      /*************login*******************/
+      .login {
+        padding-top: 0px;
+      }
+      .login_text{
+        margin-left: 15%;
+        margin-right: 15%;
+      }
+      .login .btn {
+    
+        width: 100%;
+        border-radius: 0px;
+      }
+      .container {
+        height: 100%;
+        width: 100%;
+        overflow: hidden;
+        margin-bottom: 0px;
+        margin-top: 0px;
+        border-radius: 0px;
+      }
+      /****************************************/
       .infoContainer{
         height: 100%;
         margin-bottom: 0px;
@@ -381,8 +460,8 @@ span {
       }
       
       .infoBody{
-        margin-left: 30rem;
-        margin-right: 30rem;
+        margin-left: 30%;
+        margin-right: 30%;
         font-size: 1.5rem;
       }
     }
@@ -391,6 +470,28 @@ span {
   @media(orientation: landscape){
     /*Phone landscape*/
     @media (max-width: 850px){
+      /*************login*******************/
+      .login {
+        padding-top: 0px;
+      }
+      .login_text{
+        margin-left: 15%;
+        margin-right: 15%;
+      }
+      .login .btn {
+    
+        width: 100%;
+        border-radius: 0px;
+      }
+      .container {
+        height: 100%;
+        width: 100%;
+        overflow: hidden;
+        margin-bottom: 0px;
+        margin-top: 0px;
+        border-radius: 0px;
+      }
+      /****************************************/
       .infoContainer{
         height: 100%;
         width: 100%;
