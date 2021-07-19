@@ -5,7 +5,7 @@ to percentage values and use REM everywhere else.
   --pad: 0px;
   --activePage: grey;
   font-size: 62.5%;
-  background: url(pattern.png) /*var(--activePage);*/
+  /*background: url(pattern.png) /*var(--activePage);*/
 }*   /* Sidebar scaling variable is --pad , used in navbar,js */
 
   /*content: controls everything:*/
@@ -525,3 +525,557 @@ span {
     }
 
   }
+
+
+  /* ------------------------------------------------------------------------- */
+  /*                         New CSS For The Updated App                       */
+  /* ------------------------------------------------------------------------- */
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat+Subrayada&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@500&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Encode+Sans+SC&display=swap');
+
+
+
+  .page-wrapper {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    overflow: hidden;
+  }
+
+  /* -------------------------------------- */
+  /*             Header CSS Below           */
+  /* -------------------------------------- */
+
+  .header-wrapper {
+    height: 55px;
+    width: 100%;
+    display: flex;
+    flex-flow: row;
+    background-color: #fdfdfd;
+    /*box-shadow: rgb(58, 58, 58) 0px 10px 30px -20px;*/
+    -webkit-box-shadow: 0 3px 5px rgba(57, 63, 72, 0.5);
+    -moz-box-shadow: 0 3px 5px rgba(57, 63, 72, 0.5);
+    box-shadow: 0 3px 5px rgba(57, 63, 72, 0.5);
+    z-index: 99;
+    justify-content: space-between;
+  }
+
+  
+  .header-img-wrapper {
+    height: 100%;
+    width: 46px;
+    /*margin: 0px 10px 0px 10px;*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .header-img-wrapper img {
+    width: 40px;
+    height: 35px;
+  }
+
+  .header-logo-text {
+    height: 100%;
+    width: auto;
+    font-size: 20px;
+    font-weight: bold;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 0px 0px 0px;
+    font-family: 'Montserrat Subrayada', sans-serif;
+
+  }
+
+  .profile-icon-wrapper {
+    height: 100%;
+    width: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .profile-icon-wrapper img {
+    width: 65%;
+  }
+
+  /* -------------------------------------- */
+  /*              Other CSS Below           */
+  /* -------------------------------------- */
+  
+.logo-contnent-wrapper{
+  height: 100%;
+  width: auto;
+  display: flex;
+  flex-flow: row ;
+}
+
+
+  .content-wrapper {
+    width: 100%;
+    display: flex;
+    flex-flow: row;
+    flex: 1 0 auto;
+    background: #fff;
+    position: relative;
+
+    
+  }
+
+  .footer-wrapper {
+    height: 18px;
+    width: 100%;
+    display: flex;
+    flex-flow: row;
+    background-color: #fdfdfd;
+    box-shadow: rgb(58, 58, 58) 0px 20px 30px 15px;
+    z-index: 99;
+
+    justify-content: center;
+    align-items: center;
+  }
+ 
+.new-sidebar {
+  height: 100%;
+  width: 130px;
+  /*position: absolute;*/
+  background: #333333;
+  z-index: 0;
+  display: flex;
+  flex-flow: column;
+
+  justify-content: space-between;
+
+  /*margin: 10px 0px 10px 0px; /* TOP RIGHT BOTTOM LEFT*/
+} 
+
+.new-sidebar-item {
+  height: 60px;
+  width: 100%;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  flex-flow: row;
+
+  border-bottom: 1px solid #797979;
+}
+.new-sidebar-item:hover { background-color: #4a4a4a; }
+
+.new-sidebar-item > div { 
+  pointer-events: none;
+}
+
+
+.new-sidebar-item-selected {
+  height: 60px;
+  width: 100%;
+  color: rgb(110, 110, 110);
+  display: flex;
+  align-items: center;
+  flex-flow: row;
+
+  border-bottom: 1px solid #b2b2b2;
+}
+
+
+.new-sidebar-item-slected {
+  height: 55px;
+  width: 3px;
+  border-radius: 0px 5px 5px 0px;
+  background: #00B0FF;
+  position: absolute;
+}
+
+
+.new-sidebar-icon {
+  font-size: 26px;
+  padding: 5px 10px 0px 10px;
+}
+
+.new-sidebar-text {
+  font-size: 14px;
+  /*padding: 0px 10px 0px 10px;*/
+}
+
+.new-top-sidebar-items {
+  width: 100%;
+  height: auto;
+}
+
+.new-bottom-sidebar-items {
+  width: 100%;
+  height: auto;
+}
+
+
+.new-content {
+  height: 100%;
+  background: #fff;
+  z-index: 9;
+  position: absolute;
+  right: 0;
+
+  transition: 0.45s ease-in-out;
+}
+
+.dashboard-content-wrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-flow: column;
+}
+
+.top-content-grid {
+    width: 100%;
+    height: 50%;
+    display: grid;
+
+    grid-template-columns: 2fr 350px;
+
+
+    /*grid-template-columns: ;*/
+    /*align-items: start;
+    justify-content: space-between; */
+}
+
+.bottom-content-grid {
+  width: 100%;
+  height: 50%;
+  display: grid;
+
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.content-grid-graph-cell {
+  /*border-right: 2px ridge #494949;
+  border-bottom: 2px ridge #494949;*/
+  display: flex;
+  overflow: hidden;
+  flex-flow: column;
+
+}
+.content-grid-graph {
+  width: 90%;
+  height: auto;
+}
+
+.content-grid-today-content-cell {
+  /*border-bottom: 1px solid #494949;*/
+}
+
+.dashboard-bottom-cell-first {
+  /*border-right: 1px solid #494949;*/
+  display: flex;
+  height: 100%;
+  width: 100%;
+  flex-flow: column;
+}
+
+.flex-row-wrapper {
+  display: flex;
+  flex-flow: column;
+
+  width: 100%;
+  height: 100%;
+}
+
+.listened-to-content {
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.listened-to-content-box-right {
+  /*width: auto;*/
+  width: 170px;
+  height: 40px;
+  background: #333;
+  position: relative;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-right: 50px;
+  padding-left: 25px;
+
+  font-family: 'Encode Sans SC', sans-serif;
+  font-size: 20px;
+  color: #fff;
+}
+
+.listened-to-content-outer-diamond-right {
+  position: absolute;
+  height: 50px;
+  width: 50px;
+  transform: rotate(45deg);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  overflow: hidden;
+
+  background: rgb(255, 255, 255);
+  top: -5px;
+  right: -25px;
+}
+
+.listened-to-content-inner-diamond-right {
+  position: absolute;
+  height: 40px;
+  width: 40px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  overflow: hidden;
+  background: #333333;
+}
+
+.listened-to-content-inner-diamond-right p {
+  transform: rotate(-45deg);
+  padding-left: 1px;
+  font-size: 28px;
+
+}
+
+
+
+.listened-to-content-box-left {
+  /*width: auto;*/
+  width: 170px;
+  height: 40px;
+  background: #333;
+  position: relative;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 50px;
+  padding-right: 25px;
+
+  font-family: 'Encode Sans SC', sans-serif;
+  font-size: 20px;
+  color: #fff;
+}
+
+.listened-to-content-outer-diamond-left {
+  position: absolute;
+  height: 50px;
+  width: 50px;
+  transform: rotate(45deg);
+
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  overflow: hidden;
+
+  background: rgb(255, 255, 255);
+  top: -5px;
+  left: -25px;
+}
+
+.listened-to-content-inner-diamond-left {
+  position: absolute;
+  height: 40px;
+  width: 40px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  overflow: hidden;
+  background: #333333;
+}
+
+.listened-to-content-inner-diamond-left p {
+  transform: rotate(-45deg);
+  padding-right: 1px;
+  font-size: 28px;
+
+}
+
+
+
+
+.dashboard-bottom-cell-second {
+  /*border-right: 1px solid #494949;*/
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.song-of-the-day-content-wrapper {
+  height: 90%;
+  width: 90%;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  
+}
+
+.song-of-the-day-content-title-box {
+  position: absolute;
+  height: 60px;
+  width: 300px;
+  background: #333;
+  border: 5px solid #fff; 
+  left: -25px;
+  bottom: 0;
+  color: #fff;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  flex-flow: column;
+  font-family: 'Encode Sans SC', sans-serif;
+
+  border-radius: 10px;
+
+}
+
+.song-of-the-day-content-title {
+  width: 100%;
+  height: 100%;
+
+  font-size: 20px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+
+.song-of-the-day-content-subtitle {
+  width: 100%;
+  height: 100%;
+
+  font-size: 14px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.song-of-the-day-content-img-wrapper {
+  height: 250px;
+  width: 250px;
+  background: #333333; 
+  border-radius: 50%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border: 4px solid #333;
+
+  position: relative;
+}
+
+.overflow-wrap {
+  overflow: hidden;  
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+}
+
+.song-of-the-day-content-img-wrapper img{
+  height: 100%;
+  width: 100%;
+}
+
+
+.dashboard-cell-title {
+  height: 30px;
+  padding-top: 10px;
+  width: 100%;
+  color: #333333;
+  font-size: 24px;
+  padding-left: 10px;
+  font-family: 'Encode Sans SC', sans-serif;
+  font-weight: bold;
+}
+
+.dashboard-cell-content {
+  width: 100%;
+  flex: 1 0 auto;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.dashboard-cell-graph {
+  width: 90%;
+  height: 90%;
+}
+
+
+.weather-circ {
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  background: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+
+  left: 40px;
+  top: 15px;
+}
+
+.weather-circ-icon {
+  display: flex;
+  justify-content: center;
+  color: #fff;
+  padding-top: 10px;
+  font-size: 150px;
+  height: auto;
+}
+
+.temp-circ {
+  height: 125px;
+  width: 125px;
+  border-radius: 50%;
+  background: radial-gradient(rgb(240, 144, 144), rgb(178, 54, 83));
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+
+  left: 75%;
+  top: 55%;
+  border: 5px solid #fff;
+
+
+  flex-flow: row;
+}
+
+.temp-circ-num {
+  color: #fff;
+  font-size: 40px;
+  position: relative;
+  width: auto;
+}
+
+.dashboard-bottom-cell-third {
+
+}

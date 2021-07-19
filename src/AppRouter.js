@@ -14,6 +14,8 @@ import PlaylistsPage from './components/Pages/UpcomingPages/PlaylistsPage';
 import StatisticsPage from './components/Pages/UpcomingPages/StatisticsPage';
 import ArtistsPage from './components/Pages/UpcomingPages/ArtistsPage';
 
+import DashboardPage from './components/Pages/UpcomingPages/DashboardPage';
+
 /* Routing */
 //import * as ROUTES from './components/Routes/routes';
 import PrivateRoute from './components/Routes/PrivateRoute';
@@ -23,7 +25,6 @@ class AppRouter extends React.Component {
   render() {
     return (
       <BrowserRouter>
-        <div className="content">
           <Switch>
             {/*                         Current Pages                             */}
             <PublicRoute component={LogInPage} path={'/'} exact />
@@ -31,15 +32,16 @@ class AppRouter extends React.Component {
             <PublicRoute component={InfoPage}  path="/info" exact />
             
             {/*                        Upcomming Pages                            */}
+            <PublicRoute component={DashboardPage} path={'/home'} exact />
+
+
             <PublicRoute component={RedirectPage} path={'/redirect'} exact />
-            
             <PrivateRoute component={AboutUsPage} path={'/about'} exact />
             <PrivateRoute component={SettingsPage} path={'/settings'} exact />
             <PrivateRoute component={PlaylistsPage} path={'/playlists'} exact />
             <PrivateRoute component={StatisticsPage} path={'/statistics'} exact />
             <PrivateRoute component={ArtistsPage} path={'/artists'} exact />
           </Switch>
-        </div>
       </BrowserRouter>
     );
   }

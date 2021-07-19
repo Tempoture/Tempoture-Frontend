@@ -15,7 +15,7 @@ ReactDOM.render(
   <Refresh>
     <Location>
       <Provider store={store}>
-        <AppRouter />
+        <AppRouter/>
       </Provider>
     </Location>
   </Refresh>,
