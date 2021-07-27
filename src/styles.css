@@ -242,9 +242,9 @@ span {
   /*The text around RCOS on the page*/
 
   .RCOS {
-    color: white;
+    color: #050505;
     font-weight: bold;
-    font-size: 2.3rem;
+    font-size: 14px;
   }
 
   /*The red link for RCOS*/
@@ -252,7 +252,7 @@ span {
   .RcosLink {
     color: #e63f3f;
     font-weight: bold;
-    font-size: 2.3rem;
+    font-size: 15px;
   }
 
 
@@ -273,15 +273,6 @@ span {
     font-weight: bold;
     font-size: 2.3rem;
     padding-bottom: 17%;
-  }
-
-  /*Link for what is tempoture*/
-
-  .What {
-    padding-top: 20%;
-    color: #79a3f8;
-    font-size: 2.3rem;
-    font-weight: bold;
   }
 
   /*Agreement statement (terms/conditions)*/
@@ -358,13 +349,6 @@ span {
       /*Link for what is tempoture*/
       .What {
         font-size: 4rem;
-      }
-      /*Agreement statement (terms/conditions)*/
-      .Agree {
-        font-size: 2.3rem;
-      }
-      .Checkbox {
-        font-size: 3rem;
       }
       .login .btn {
     
@@ -546,6 +530,274 @@ span {
     overflow: hidden;
   }
 
+  .flex-col-wrapper {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+  }
+
+    
+  /* -------------------------------------- */
+  /*           Login Page CSS Below         */
+  /* -------------------------------------- */
+  .grey-bg {
+    background-color: #2f2f2f;
+  }
+
+  .center-wrapper {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .login-content-rect {
+    height: 550px;
+    width: 400px;
+    display: flex;
+    background-color: #fdfdfd;
+    position: relative;
+    border-radius: 4px;
+    overflow: none;
+    box-shadow: rgba(255, 255, 255, 0.35) -4px 4px 15px;
+  }
+
+  .login-content-header {
+    height: 80px;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+  }
+  @import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@600&family=Yanone+Kaffeesatz:wght@400&display=swap');
+
+  .login-header-wrapper{
+    width: auto;
+    height: 40px;
+    /*font-family: 'Yanone Kaffeesatz', sans-serif;*/
+    font-family: 'Encode Sans SC', sans-serif;
+    font-size: 28px;
+    font-weight: bold;
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    padding-right: 20px;
+  }
+  
+  .login-header-img-wrapper{
+    height: 100%;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  }
+
+  .login-header-img-wrapper img {
+    height: 90%;
+  }
+
+
+  .login-content {
+    flex: 1 0 auto;
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+  }
+
+  .login-content-top {
+    height: 60%;
+    width: 100%;
+    
+    display: flex;
+    /* Below is temporary until SLogan is found */
+    justify-content: center;
+    align-items: center;
+  
+ 
+  }
+  @import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@1,300&display=swap');
+  .login-content-top-wrapper {
+    width: 100%;
+    height: 100%;
+    padding-right: 30px;
+
+    display: flex;
+    align-items: center;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 36px;
+    font-style: italic;
+    text-align: center;
+  }
+  .login-content-bottom {
+    height: 40%;
+    width: 100%; 
+    display: flex;
+    flex-flow: column;
+
+    justify-content: space-between;
+  }
+
+  .what-wrapper {
+    width: 100%;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /*Link for what is tempoture*/
+  .What {
+      color: #050505;
+      font-size: 18px;
+      font-weight: bold;
+  }
+  
+  .user-agree-wrapper {
+    height: auto;
+    width: 100%;
+
+  }
+
+  .agreement-text-wrapper {
+    padding: 0px 40px 0px 20px;
+    text-indent: 15px;
+    font-size: 11px;
+  }
+
+  .checkbox-wrapper {
+      height: auto;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 10px 0px 10px 0px;
+  }
+
+  .checkbox-wrapper  label{
+    font-size: 14px;
+  }
+
+  .checkbox-wrapper input{
+    height: 12px;
+    width: 12px;
+  }
+
+  .login-content-footer {
+    height: 60px;
+    width: 100%;
+    background-color: #333333;
+
+    border-radius: 0px 0px 0px 4px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: #fdfdfd;
+    font-size: 20px;
+    font-family: 'Encode Sans SC', sans-serif;
+
+    position: relative;
+  }
+
+  .login-content-footer:hover {
+    color: #67ff67;
+  }
+
+
+  .login-content-footer button {
+    height: 100%;
+    width: 100%;
+  }
+
+  .spotify-login-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    z-index: 0;
+  }
+
+  /*---------------------------------------------------*/
+  
+.thermometer_container {
+  width: 100px;
+  height: 575px;
+  display: block;
+  position: absolute;
+  right: -50px;
+  top: -10px;
+  z-index: 999;
+}
+
+.thermometer {
+  border: 5px solid #52585f;
+  border-bottom: transparent;
+  box-sizing: border-box;
+  display: block;
+  position: absolute;
+  z-index: 1;
+  left: 20px;
+  width: 40px;
+  height: 504px;
+  border-radius: 50px 50px 0 0;
+  background: #FFF;
+}
+
+.base {
+  box-shadow: 0 0 0 5px #FFF, 0 0 0 10px #52585f; 
+  background:  #e64545;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  /*line-height: 60px;*/
+  color: #FFF;
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  width: 60px;
+  height: 60px;
+  border-radius: 100%;
+}
+
+.base p {
+  font-family: 'Encode Sans SC', sans-serif;
+  padding-bottom: 5px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #fdfdfd;
+}
+
+.base a {
+  text-decoration: none;
+}
+
+.stem {
+  background: #EFEFEF;
+  position: relative;
+  display: block;
+  width: 20px;
+  height: 505px;
+  border-radius: 10px 10px 0 0;
+  margin: 5px auto;
+}
+
+.stem .fluid {
+  background: #e64545;
+  display: block;
+  width: 100%;
+  height: 50%;
+  border-radius: 25px 25px 0 0;
+  position: absolute;
+  bottom: 0;
+}
+/*--------------------------------------------------*/
   /* -------------------------------------- */
   /*             Header CSS Below           */
   /* -------------------------------------- */

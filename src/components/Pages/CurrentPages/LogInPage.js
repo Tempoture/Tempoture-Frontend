@@ -5,6 +5,9 @@ import Logo from "./Tempo-Logo-Grey.png"
 import Text_ from "./Tempoture-Text.png"
 import { Text, StyleSheet } from 'react-native';
 
+
+import newLogo from './Tempo.png'; 
+
 require('dotenv').config()
 
 const scopes = [
@@ -17,7 +20,7 @@ const scopes = [
   "user-modify-playback-state",
 ];
 
-const handleLogin = () => { 
+const handleLogin = () => {  //THIS NEEDS MAJOR WORK
   localStorage.setItem('isAuthenticated', true);
 
   if(document.getElementById("check").checked == true){
@@ -38,7 +41,61 @@ if (window.location.href=="http://localhost:3000/") {
 
 const LogInPage = (props) => {
   localStorage.setItem('isAuthenticated', false);
-  return (
+
+  return ( 
+    <div className="page-wrapper grey-bg">
+      <div className="center-wrapper">
+        <div className="login-content-rect">
+        {/**             Make a component later            */}
+          <div class="thermometer_container">
+            <div class="thermometer">
+              <div class="stem"> <div class="fluid" /> </div>
+            </div>
+            <div class="base"><a className="Click" href="https://www.spotify.com/us/"><p>Get Spotify</p></a></div>
+          </div>
+        {/*----^--------------------------------------^----*/}
+        <div className="flex-col-wrapper">
+            <div className="login-content-header" >
+              <div className="login-header-wrapper">
+                <div className="login-header-img-wrapper" ><img alt='' src={newLogo} /></div>
+                Tempoture
+              </div>
+              <div className = "RCOS"> An <a className="RcosLink" href="https://rcos.io/">RCOS</a> Project</div>
+            </div>
+            <div className="login-content" >
+              <div className="login-content-top" >
+                <div className="login-content-top-wrapper" >
+                  When the music and the rain sound the same.
+                </div>
+              </div>
+              <div className="login-content-bottom" >
+                <div className="what-wrapper">
+                   <a className = "What" href = "/LearnMore">What is Tempoture?</a>
+                </div>
+                <div className="user-agree-wrapper">
+                    <div className = "agreement-text-wrapper">
+                      By checking the user agreement below I hereby expressively consent for this app to be able to use website tracking in regard to location data and to communicate with my Spotify account's currently playing data, recently played data, playback state data and playlist data for the next 30 days.
+                    </div>
+                    <div className="checkbox-wrapper">
+                      <input type="checkbox" className="user-agree-check" id="check" />
+                      <label className="user-agree-label"> Accept User Agreement</label>
+                    </div>
+                </div>
+              </div>
+            </div>
+            <div className="login-content-footer" >
+              <button className="spotify-login-btn" variant="info" type="submit" onClick={handleLogin}/>
+              Login with Spotify
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+  )
+  //OLD LOGIN PAGE DO NOT GET RID OF JUST YET!!!!
+  /*return (
     <div className="login">
       <div class="container">
         <div className="login_text">
@@ -74,7 +131,7 @@ const LogInPage = (props) => {
           Don't have Spotify? <a className = "Click" href = "https://www.spotify.com/us/">Click here</a>
         </div>
     </div>
-  );
+  );*/
 };
 
 export default connect()(LogInPage);
