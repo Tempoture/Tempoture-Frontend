@@ -99,8 +99,8 @@ class Dashboard extends React.Component {
     }
 
     componentDidMount(){
-       console.log(getWindowDimensions().width);
-      } 
+       //console.log(getWindowDimensions().width);
+    } 
 
   render() {
     return  <div className="page-wrapper">
